@@ -12,7 +12,7 @@ namespace AppWebUriel.Model
         public string Numero { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "A data do processo é obrigatória.")]
-        public DateTime? Data { get; set; }
+        public DateOnly? Data { get; set; }
 
         [Required(ErrorMessage = "O interessado do processo é obrigatório.")]
         [StringLength(200, ErrorMessage = "O interessado deve ter no máximo 200 caracteres.")]
