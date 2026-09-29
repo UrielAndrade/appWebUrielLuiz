@@ -1,0 +1,15 @@
+@using Model
+@using DAO
+@inject DAO.ProcessoDAO dao
+@inject NavigationManager NavigationManager
+@rendermode InteractiveServer
+
+@code {
+    private Processo processo = new();
+    private void Salvar()
+    {
+        dao.Inserir(processo);
+        // Retorna a página de processos após salvar
+        NavigationManager.NavigateTo("/processos");
+    }
+}
