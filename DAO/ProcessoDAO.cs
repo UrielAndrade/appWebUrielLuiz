@@ -30,6 +30,12 @@ namespace AppWebUriel.DAO
             return lista;
         }
 
+        public Processo Create()
+        {
+            var processo = new Processo();
+
+            return processo;
+        }
         // Método auxiliar: converte a linha atual do leitor em um objeto Processo.
         // Usa o DAOHelper para ler com segurança as colunas que podem ser NULL.
         private static Processo MapearProcesso(MySqlDataReader leitor)
