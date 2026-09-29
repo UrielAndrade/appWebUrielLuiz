@@ -69,7 +69,7 @@ namespace AppWebUriel.DAO
             {
                 Id = leitor.GetInt32("id_pro"),
                 Numero = DAOHelper.GetString(leitor, "numero_pro"),
-                Data = DAOHelper.GetDateTime(leitor, "data_pro"),
+                Data = DAOHelper.GetDateOnly(leitor, "data_pro"),
                 Interessado = DAOHelper.GetString(leitor, "interessado_pro"),
                 Assunto = DAOHelper.GetString(leitor, "assunto_pro"),
                 Descricao = DAOHelper.GetString(leitor, "descricao_pro"),
